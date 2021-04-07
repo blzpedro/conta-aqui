@@ -1,0 +1,30 @@
+.first-section{
+    h1, p{
+        color: white
+    }
+}
+
+
+.second-section{
+    .box-passo{
+        box-shadow: 5px 5px 16px 1px #000000;
+        border-bottom: 5px solid #71388D;
+        .titulo{
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+}
+
+.four-section{
+    .bg-icon{
+        background-color:#71388D;
+        padding: 10px 10px 8px 10px;
+        text-align: center;
+        border-radius: 40px;
+        margin-right: 10px;
+        img{
+            width: 30px;
+        }
+    }
+}

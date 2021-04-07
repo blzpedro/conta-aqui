@@ -1,0 +1,84 @@
+.first-section{
+    height: 500px;
+    width: 100%;
+    background-color: #71388D;
+}
+
+.content{
+    padding: 50px 0;
+}
+
+h1, p, button{
+    margin: 20px 0;
+}
+
+.box{
+    background-color: white;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px 1px #000000;
+    p{
+        text-align: left;
+    }
+    ::ng-deep mat-form-field{
+        width: 100%;
+    }
+}
+
+.second-section{
+    .content{
+        padding-bottom: 0;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    img{
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.third-section{
+    background-color: #71388D;
+}
+
+.four-section{
+    background-color: #F1F1F1;
+    .icon-lg{
+        color: #71388D;
+        font-size: 5.5em;
+    }
+    h3{
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
+
+.six-section{
+    hr{
+        width: 30px;
+        margin: 0 auto 0 0;
+    }
+    .controls{
+        p{
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+        span{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .bg-img{
+            background-color: #71388D;
+            padding: 10px;
+            border-radius: 50px;
+            width: 55px;
+            justify-content: center;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+}
+

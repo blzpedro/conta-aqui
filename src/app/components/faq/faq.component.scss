@@ -1,0 +1,36 @@
+
+
+.faq-section{
+    background-color: #71388D;
+    .faq-box{
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 5px 5px 16px 1px #000000;
+        border-radius: 10px;
+        padding: 0;
+        p{
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+        }
+        hr{
+            margin-right: auto;
+            margin: 0;
+        }
+        .faq-titulo, span{
+            font-size: 14px;
+        }
+        .faq-footer{
+            hr{
+                width: 100%;
+                border: 1px solid lightgray;
+            }
+            a{
+                text-align: center;
+                display: block;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 15px;
+            }
+        }
+    }
+}

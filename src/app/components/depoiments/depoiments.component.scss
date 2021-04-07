@@ -1,0 +1,38 @@
+.depoiment-section{
+    background-color: #71388D;
+    h1, p{
+        color: white
+    }
+    hr{
+        border-color: white;
+    }
+    .box p{
+        color: black
+    }
+    .depoiment-info{
+        img {
+            width: 50px;
+        }
+    }
+    i{
+        font-size: 44px;
+    }
+}
+
+.box{
+    background-color: white;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px 1px #000000;
+    p{
+        text-align: left;
+    }
+    ::ng-deep mat-form-field{
+        width: 100%;
+    }
+}
+
+.content{
+    padding: 50px 0;
+}

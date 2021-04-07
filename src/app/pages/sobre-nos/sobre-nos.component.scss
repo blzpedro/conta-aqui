@@ -1,0 +1,39 @@
+.first-section{
+    h1, p{
+        color: white
+    }
+}
+
+.second-section{
+    .col-lg-6{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.third-section{
+    color: white;
+    img{
+        width: 100px;
+    }
+    p{
+        font-weight: bold;
+        margin: 10px 0;
+    }
+}
+
+.four-section{
+    background-color: #48235A;
+    button{
+        background-color: #48235A;
+        &:hover{
+            background-color: white;
+        }
+    }
+}

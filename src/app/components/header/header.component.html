@@ -1,0 +1,32 @@
+<div>
+    <mat-toolbar class="menu-vertical container">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm class="btn-hamburguer">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <img src="../../../assets/images/logo.png" alt="Logo-ContaAqui" class="mr-auto ml-auto">
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md class="menu-itens-vertical">
+          <a mat-button [routerLink]="'/'" [ngClass]="routeActive == '/' ? 'active' : ''"><i class="fas fa-home" style="margin-right: 2px;margin-top: -2px;"></i>Home</a>
+          <a mat-button [routerLink]="'/sobre-nos'" [ngClass]="routeActive == '/sobre-nos' ? 'active' : ''">Sobre nós</a>
+          <a mat-button [routerLink]="'/como-funciona'" [ngClass]="routeActive == '/como-funciona' ? 'active' : ''">Como funciona</a>
+          <a mat-button [routerLink]="'/planos'" [ngClass]="routeActive == '/planos' ? 'active' : ''">Planos</a>
+          <a mat-button class="btn-contato" [routerLink]="'/contato'" [ngClass]="routeActive == '/contato' ? 'active' : ''">Entre em contato</a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    
+    <mat-sidenav-container fxFlexFill class="menu-horizontal">
+      <mat-sidenav #sidenav>
+        <mat-nav-list class="menu-itens-horizontal">
+          <a mat-button>Home</a>
+          <a mat-button>Sobre nós</a>
+          <a mat-button>Como funciona</a>
+          <a mat-button>Planos</a>
+          <a mat-button>Entre em contato</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <router-outlet></router-outlet>
+    </mat-sidenav-container>
+  </div>
+  
