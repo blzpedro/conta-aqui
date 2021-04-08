@@ -1,6 +1,109 @@
-.first-section{
-    background-color: #f0d4fd44;
-    h2{
-        color: #71388D
-    }
+.first-section {
+  background-color: #f0d4fd44;
+
+  h2 {
+    color: #71388D
+  }
+}
+
+.content {
+  padding: 50px 0px;
+  margin-bottom: 50px;
+}
+
+h1,
+p,
+button {
+  margin: 20px 0;
+}
+
+.second-section {
+    margin-bottom: 50px;
+  .content {
+    padding-bottom: 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+  }
+}
+
+.box {
+  background-color: white;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 16px 1px #000000;
+
+  p {
+    text-align: left;
+  }
+
+  ::ng-deep mat-form-field {
+    width: 100%;
+  }
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.check:hover input~.checkmark {
+  background-color: rgb(165, 152, 152);
+}
+
+.check input:checked~.checkmark {
+  background-color: #71388D;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked~.checkmark:after {
+  display: block;
+}
+
+.check .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
