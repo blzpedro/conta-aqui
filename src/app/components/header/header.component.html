@@ -4,7 +4,7 @@
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm class="btn-hamburguer">
           <mat-icon>menu</mat-icon>
         </button>
-        <img src="../../../assets/images/logo.png" alt="Logo-ContaAqui" class="mr-auto ml-auto">
+        <a href="/"><img src="../../../assets/images/logo.png" alt="Logo-ContaAqui" class="mr-auto ml-auto"></a>
         <span class="menu-spacer"></span>
         <div fxShow="true" fxHide.lt-md class="menu-itens-vertical">
           <a mat-button [routerLink]="'/'" [ngClass]="routeActive == '/' ? 'active' : ''"><i class="fas fa-home" style="margin-right: 2px;margin-top: -2px;"></i>Home</a>
