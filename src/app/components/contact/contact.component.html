@@ -1,3 +1,10 @@
+<app-modal-form 
+    *ngIf="response.toggleModal" 
+    (closeEvent)="closeModal()" 
+    [message]="response.message"
+    [title]="response.title"
+    [type]="response.type">
+</app-modal-form>
 <div class="contact-section p-4">
     <div class="container content p-4">
         <div class="col-lg-12 contact-box">
@@ -10,17 +17,17 @@
                 <div class="col-lg-6 contact-form">
                     <mat-form-field>
                         <mat-label>Nome</mat-label>
-                        <input matInput>
+                        <input matInput type="text" [(ngModel)]="name" [value]="name">
                     </mat-form-field>
                     <mat-form-field>
                         <mat-label>E-mail</mat-label>
-                        <input matInput>
+                        <input matInput type="email" [(ngModel)]="email" [value]="email">
                     </mat-form-field>
                     <mat-form-field>
                         <mat-label>WhatsApp</mat-label>
-                        <input matInput>
+                        <input matInput type="tel" [(ngModel)]="tel" [value]="tel">
                     </mat-form-field>
-                    <button class="btn-full-purple mb-3">QUERO COMEÇAR</button>
+                    <button class="btn-full-purple mb-3" (click)="sendBody()">QUERO COMEÇAR</button>
                     <span class="text-center">Endereço: R. Martim Afonso, 213 - Cj. 8 A 13 - Centro <br>
                         São Vicente/SP - Cep: 11310-010</span>
                     <div class="icons row">

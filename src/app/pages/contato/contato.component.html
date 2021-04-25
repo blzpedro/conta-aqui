@@ -1,3 +1,10 @@
+<app-modal-form 
+    *ngIf="response.toggleModal" 
+    (closeEvent)="closeModal()" 
+    [message]="response.message"
+    [title]="response.title"
+    [type]="response.type">
+</app-modal-form>
 <div class="first-section">
     <div class="container">
         <div class="col-lg-12 text-center pt-4">
@@ -21,41 +28,36 @@
             <div class="box col-lg-4">
                 <mat-form-field>
                     <mat-label>Nome</mat-label>
-                    <input matInput>
+                    <input matInput type="text" [(ngModel)]="name" [value]="name">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>E-mail</mat-label>
-                    <input matInput>
+                    <input matInput type="email" [(ngModel)]="email" [value]="email">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>WhatsApp</mat-label>
-                    <input matInput>
+                    <input matInput type="tel" [(ngModel)]="tel" [value]="tel">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Qual é o nome da sua empresa?*</mat-label>
-                    <input matInput>
+                    <input matInput type="text" [(ngModel)]="companyName" [value]="companyName">
                 </mat-form-field>
 
                 <p>Qual o faturamento mensal da sua empresa?*</p>
                 <label class="check">Menor de R$ 100mil
-                    <input type="radio" checked="checked" name="radio">
+                    <input type="radio" checked="checked" name="radio" [(ngModel)]="billing" value="Menor de R$ 100mil">
                     <span class="checkmark"></span>
                 </label>
                 <label class="check">Entre R$ 100mil e R$ 300mil
-                    <input type="radio" name="radio">
+                    <input type="radio" name="radio" [(ngModel)]="billing" value="Entre R$ 100mil e R$ 300mil">
                     <span class="checkmark"></span>
                 </label>
                 <label class="check">Acima de R$ 300mil
-                    <input type="radio" name="radio">
+                    <input type="radio" name="radio" [(ngModel)]="billing" value="Acima de R$ 300mil">
                     <span class="checkmark"></span>
                 </label>
 
-                <p style="margin-bottom: -20px;">8 + 4 = ?</p>
-                <mat-form-field>
-                    <input matInput>
-                </mat-form-field>
-
-                <button class="btn-full-purple col-lg-12" style="padding: 10px 20px;">
+                <button class="btn-full-purple col-lg-12" style="padding: 10px 20px;" (click)="sendBody()">
                     RECEBER CONTATO
                 </button>
             </div>

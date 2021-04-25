@@ -1,3 +1,10 @@
+<app-modal-form 
+    *ngIf="response.toggleModal" 
+    (closeEvent)="closeModal()" 
+    [message]="response.message"
+    [title]="response.title"
+    [type]="response.type">
+</app-modal-form>
 <div>
     <div class="first-section">
         <div class="container content">
@@ -18,17 +25,17 @@
                         </p>
                         <mat-form-field>
                             <mat-label>Nome</mat-label>
-                            <input matInput>
+                            <input matInput type="text" [(ngModel)]="name" [value]="name">
                         </mat-form-field>
                         <mat-form-field>
                             <mat-label>E-mail</mat-label>
-                            <input matInput>
+                            <input matInput type="email" [(ngModel)]="email" [value]="email">
                         </mat-form-field>
                         <mat-form-field>
                             <mat-label>WhatsApp</mat-label>
-                            <input matInput>
+                            <input matInput type="tel" [(ngModel)]="tel" [value]="tel">
                         </mat-form-field>
-                        <button class="btn-full-purple" style="padding: 10px 20px;">
+                        <button class="btn-full-purple" style="padding: 10px 20px;" (click)="sendBody()">
                             FALAR COM UM ESPECIALISTA!
                         </button>
                     </div>

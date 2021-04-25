@@ -12,6 +12,9 @@ import { ContactComponent } from './../components/contact/contact.component';
 import { FaqComponent } from '../components/faq/faq.component';
 import { ContatoComponent } from './contato/contato.component';
 import { DepoimentsComponent } from '../components/depoiments/depoiments.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ModalFormComponent } from '../components/modal-form/modal-form.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,15 @@ import { DepoimentsComponent } from '../components/depoiments/depoiments.compone
     ComoFuncionaComponent,
     PlanosComponent,
     ContatoComponent,
-    DepoimentsComponent
+    DepoimentsComponent,
+    ModalFormComponent
   ],
-
   imports: [
-  CommonModule,
+    CommonModule,
     PagesRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    HttpClientModule
   ],
 
   entryComponents: [    
