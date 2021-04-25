@@ -31,6 +31,9 @@
     ::ng-deep mat-form-field{
         width: 100%;
     }
+    @media screen and (max-width: 875px){
+        margin: 20px 0
+    }
 }
 
 .content{

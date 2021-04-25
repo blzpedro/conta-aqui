@@ -1,5 +1,4 @@
 .first-section{
-    height: 500px;
     width: 100%;
     background-color: #71388D;
 }
@@ -53,6 +52,11 @@ h1, p, button{
     h3{
         text-align: left;
         text-transform: uppercase;
+    }
+    @media screen and (max-width: 875px){
+        h3, p{
+            text-align: center;
+        }
     }
 }
 

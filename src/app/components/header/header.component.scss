@@ -64,3 +64,25 @@
         }
     }
 }
+
+::ng-deep{
+    .btn-hamburguer{
+        font-size: 20px;
+        color: #71388D;
+    }
+    .mat-toolbar-row{
+        justify-content: space-around;
+    }
+    .mat-drawer:not(.mat-drawer-side) {
+        box-shadow: none;
+    }
+    .mat-nav-list{
+        display: grid !important;
+        a{
+            margin: 0 20px;
+        }
+    }
+    .mat-sidenav{
+        width: 50%;
+    }
+}

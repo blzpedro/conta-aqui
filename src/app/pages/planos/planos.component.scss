@@ -27,3 +27,22 @@
         }
     }
 }
+
+.second-section{
+    @media screen and (max-width: 875px){
+        button{
+            margin-bottom: 20px;
+        }
+    }
+    .row{
+        justify-content: center;
+    }
+}
+
+.third-section{
+    @media screen and (max-width: 875px){
+        button{
+            margin-top: 20px;
+        }
+    }
+}

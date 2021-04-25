@@ -28,3 +28,11 @@
         }
     }
 }
+
+.third-section{
+    @media screen and(max-width: 875px) {
+        button{
+            margin-top: 20px;
+        }
+    }
+}

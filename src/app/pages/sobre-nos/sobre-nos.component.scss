@@ -30,10 +30,15 @@
 
 .four-section{
     background-color: #48235A;
-    button{
+    a, button{
         background-color: #48235A;
         &:hover{
             background-color: white;
+        }
+    }
+    @media screen and (max-width: 875px){
+        button{
+            margin-top: 20px;
         }
     }
 }

@@ -21,27 +21,42 @@
             margin: 10px 0;
             .icon{
                 margin: 0 10px;
-                background-color: #71388D;
+                background-color: white;
+                border: 2px solid #71388D;
                 width: 50px;
                 text-align: center;
                 padding: 10px;
                 border-radius: 50px;
-                border: 2px solid transparent;
                 cursor: pointer;
                 transition: .7s all;
             }
             a{
                 font-size: 20px;
             }
-            i{
-                color:white;
+            // .icon:hover{
+            //     background-color: white;
+            //     border: 2px solid #71388D;
+            //     i{
+            //         color:#71388D;
+            //     }
+            // }
+            .wpp{
+                color: #50c656
             }
-            .icon:hover{
-                background-color: white;
-                border: 2px solid #71388D;
-                i{
-                    color:#71388D;
-                }
+            .in{
+                color: #006699
+            }
+            .yt{
+                color: red
+            }
+            .ig{
+                color: black
+            }
+            .fb{
+                color: #4064ac
+            }
+            .tt{
+                color: #2aa9e0
             }
         }
     }
